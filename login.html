@@ -1,0 +1,140 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz_login</title>
+	<style>
+		
+    body{background:url(69554731-exam-wallpapers.jpg);background-repeat: no-repeat;background-size: cover;}
+	#box{width:70%;height:80vh;//border:2px solid white  ;margin:5% auto;}
+    #box1{width:50.1%;height: 100%;//border:1px solid white;float: left;//background:url(tumblr_njmum0EMOu1qznmazo1_1280.jpg);//background-size:500px 600px;
+    	background:rgba(0,0,0,0.9);color:white;}
+    #box1 h3{font-size: 30px;font-family: 'Roboto', sans-serif;//margin-left: 4%;}
+    #box1 p{font-size: 16px;font-family: 'Roboto', sans-serif;//margin-left: 4%;}
+    #box1 form label{font-size: 20px;font-family: 'Roboto', sans-serif;//margin-left: 4%;line-height: 1.7;}
+    #box1 form input{font-size: 20px;font-family: 'Roboto', sans-serif;//margin-left: 4%;background:transparent;color:white;}
+    #box1 form input:focus{outline:none;}
+    #box1 form input{border:none;border-bottom:1px solid white;width:75%;}
+    #box1 form input[type="submit"]{width:150px;height:44px;border:3px solid white;font-size:17px;border-radius:20px;color:white;
+    								font-weight: bold;//box-shadow: 1px 1px 6px 2px white;}
+    #box1 form input[type="submit"]:hover{color:#5DADE2;border:3px solid #5DADE2;background:white;//box-shadow: 1px 1px 6px 2px white;}
+     #box1 form input::placeholder{color:white;font-size: 20px;font-family: 'Roboto', sans-serif;}
+     #box1 p a{color:#5DADE2;text-decoration: none;}
+
+
+
+
+    #box2{width:49.9%;height: 100%;//border:1px solid white;border-left:0px;float: right;background-color: white;background:white;color:black;}
+    #box2 img{//margin-left:40%;margin-top:8%;}
+    #box2 p{font-size: 30px;font-family: 'Roboto', sans-serif;}
+    //#box2 p{font-size: 16px;font-family: 'Roboto', sans-serif;}
+    #box2 #b {font-size: 16px;font-family: 'Roboto', sans-serif;line-height: 2;//font-weight: bold;}
+    #box2 #c{font-size: 16px;font-family: 'Roboto', sans-serif;//font-weight: bold;}
+    #box2 form input{border:none;border-bottom: 1px solid steelblue;width:70%;height:15px;}
+     #box2 form input{background:url(email.svg) right;background-size: 20px 20px;background-repeat: no-repeat;}
+      #box2 form input{padding: 10px 3px;}
+    #box2 form input::placeholder{font-size: 15px;font-family: 'Roboto', sans-serif;color: black; }
+    #box2 form input[type="submit"]{width:30%;height:37px;border:2px solid steelblue;border-radius:20px;
+    						background:steelblue;font-size:16px;font-family: 'Roboto', sans-serif;color:white;}
+    #box2 form input[type="submit"]:hover{color:#5DADE2;border:3px solid #5DADE2;background:white;font-weight:bold;}						
+    #box2 form input:focus{ outline:none;}
+
+	@media only screen and (max-width: 600px){
+
+		#box{width:96%;height:85vh;}
+		#box1{width:91%;height:490px;//border:1px solid white;margin-left: 5%;background-color: rgba(0,0,0,0.8);}
+		#box1 h3{font-size:25px;}
+		#box1 p{font-size:13px;}
+		#box1 form input{font-size:16px;}
+		#box1 form input::placeholder{font-size: 16px;}
+		#box1 form input[type="submit"]{font-weight: normal;}
+
+
+		#box2{width:91%;height:490px;border:1px solid white;float:left;margin-left: 5%;margin-bottom: 17px;}
+		#box2{margin-top: 10px;}
+		#box2 p{font-size:25px;}
+		#box2 #b{font-size: 14px;}
+		#box2 #c{font-size: 14px;}
+		#box2 form input{width: 74%;padding: 5px 3px;}
+		#box2 form input[type="submit"]{width:130px;height: 40px;}
+		#box2 #insta{display: none;}
+
+
+	}
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body onLoad="if(history.length>0)history.go(+1)">
+
+
+
+
+<div id="box">
+
+	<div id="box1">
+		<center>
+		<br>
+		<h3>LOGIN</h3>
+		<p>Now you are going to enter the quiz.All the Best.</p>
+		<br><br>
+		<form action="logcode.php" method="POST">
+		<br>
+		<input type="email" name="pemail" placeholder="Email" required><br><br><br>
+		<br><br>
+		<input type="password" name="ppass" placeholder="Password"  required><br><br><br><br>
+		<input type="submit" value="LOGIN" name="submit1">
+		</form>
+		<br>
+		<center>
+		<p class="p1">Forgot Password ? <a href="#">Retrieve</a></p></center>
+
+</center>
+
+
+
+
+
+
+
+	</div>
+	
+
+
+
+	<div id="box2">
+		<center><img src="285079.svg" alt="bird_suscribe" width="60" height="60" >
+		<p>Suscribe Us</p>
+		
+		<p id="b">Suscribe us to get latest news about quiz!</p>
+		<p id="c">Drop mail to join our newsletter for free news </p><br><br>
+		<form action="suscribe.php" method="POST">
+			<input type="email" name="email" placeholder="Enter your email" required><br><br><br>
+			<input type="submit" value="Suscribe" name="submit1">
+		</form>
+		<a href="#"><img src="youtube_128.png" width="60" height="60"></a>
+		<a href="#"><img src="if_facebook_128_221698.png" width="60" height="60"></a>
+		<a href="#"><img src="if_google_128_221701.png" width="60" height="60"></a>
+		<a href="#"><img src="if_twitter_128_221707.png" width="60" height="60"></a>
+		<a id="insta" href="#"><img src="instagram_128.png" width="60" height="60"></a>
+
+
+		</center>
+		
+
+	</div>
+
+
+</div> 
+
+
+
+
+</body>
+</html>

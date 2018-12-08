@@ -1,0 +1,85 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<style>
+		
+	body
+	{
+		background:url(69554731-exam-wallpapers.jpg);
+
+		background-size: cover;
+		
+	}
+	#box
+	{
+		width:70%;height:560px;
+		margin-top: 5%;margin-left: 14%;
+	}
+	
+
+	#box2{width:100%;height:100%;border:3px solid white;float:right;background-color:rgba(0,0,0,0.8);border-radius:5px;}
+	#box21{width:100%;height:20%;background-color:transparent;//border:1px solid white;}
+	#box2 h3{font-size: 30px;font-family: 'Roboto', sans-serif;margin-left: 10%;color:white ;}
+	#box2 p{font-size:20px ;font-family:'Roboto', sans-serif;margin-left: 10%; color:white  ;}
+	#box2 form{margin-left:10%;}
+	#box2 form input{width:80%;height:27px;border:none;border-bottom: 1px solid white ;
+					font-size:24px ;font-family:'Roboto', sans-serif;background-color: transparent;color: white;}
+	#box2 form input::placeholder{font-size:21px ;font-family:'Roboto', sans-serif;color:white  ;}
+	#box2 form input[type="submit"]{width:50%;height: 50px;border:3px solid #566573 ;margin-left: 17%;
+									font-size:21px ;font-family:'Roboto', sans-serif;font-weight: bold;border-radius: 20px;
+									background-color:white;color:#566573;box-shadow: 1px 1px 3px 3px white;}	
+	#box2 form input:focus{outline:none;}
+	#box2 .p1{margin-left: 35%;font-size: 23px;font-family:'Roboto', sans-serif;}
+	#box2 .p1 a{text-decoration: none;color:#D4AC0D;}		
+
+	@media only screen and (max-width: 600px){
+
+	body{background:url(69554731-exam-wallpapers.jpg);background-size:cover;background-repeat: no-repeat;}	
+	#box{width:96%;height:560px;margin: auto auto;margin-left:0%;margin-top: -1%;}
+	#box2{width:95%;height:93%;margin-top: 5%;background-color:rgba(0,0,0,0.8);border:none;border-radius:0px;//border:1px solid white;}
+	#box2 h3{font-size:25px;margin-left:0%;text-align:center;margin-top:7%;}
+	#box2 p{font-size: 14px;margin-left: 5%; }
+	#box2 form input{font-size: 16px;}	
+	#box2 form input::placeholder{font-size: 16px;}
+	#box2 form input[type="submit"]{font-size: 17px;margin-top: -4%;box-shadow: none;border-color:grey;}
+	#box2 .p1{font-size:17px;text-align: center;margin-left: 2%;margin-top:7%;}
+	#box2 form input[type="submit"]:hover{background-color:black;color:#566573;box-shadow:none;color: white;border-color:white;}
+
+
+
+
+	}						
+
+	
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		
+
+		<div id="box2">
+			<div id="box21">
+
+		<h3>Register</h3>
+		<p>Create your account.It's required for participation</p><br><br></div>
+		<br><br>
+		<form action="regcode.php" method="POST">
+		<input type="text" name="pname" placeholder="Your Name" style="text-transform: capitalize;" required><br><br><br>
+		<input type="email" name="pemail" placeholder="Email" required><br><br><br>
+		<input type="password" name="ppass" placeholder="Create Password" required><br><br><br><br><br>
+		<input type="submit" value="Register Now">
+		</form>
+		<p class="p1">Already Registered ? <a href="login.html">Login</a></p>		
+
+
+
+
+		</div>
+		
+	</div>
+</body>
+</html>
